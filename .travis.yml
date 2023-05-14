@@ -4,3 +4,6 @@ services:
 
 before_install:
   - docker build  -t eddie/react-docker  -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true eddie/react-docker npm run test
