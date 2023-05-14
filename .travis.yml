@@ -1,0 +1,6 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build  -t eddie/react-docker  -f Dockerfile.dev .
