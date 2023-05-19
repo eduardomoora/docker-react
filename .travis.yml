@@ -17,6 +17,7 @@ deploy:
   bucket_path: "monday"
   on:
     branch: main
+  edge: true
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: "$SECRET_ACCESS_KEY"
   
